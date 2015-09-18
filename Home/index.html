@@ -16,7 +16,7 @@
 	body {
 		padding: 0; 
 		margin: 0;
-		position: relative;
+		position: absolute;
   		width: 100%;
   		height: 100%;
   	} 
@@ -126,13 +126,18 @@
 		color: white;
 	}
 
+	/* Estilos de menu de codigo */
+
 	#link_redes{
+		z-index: 1;
+		float: right;
 		position: relative;
 		margin: 0px 10px 10px 10px;
 		display: inline-block;
-		z-index: 3;
+
 	}
-	#link_redes a{
+	#link_red a{
+		position: relative;
 		font-size: 18px;
 		color: white;
 		margin: 0px 5px;
@@ -144,15 +149,19 @@
 
 	#sketch{
 		float: right;
-		position: relative;
+		position: fixed;
+		bottom: 0;
+		right: 0;
 		width: 80%;
 		height: 100%;
 		z-index: 0;
+		pointer-events: auto;
 
 		
 	}
 
 	#sketch iframe{
+		
 		border:none;
 		position: relative;
 		width: 100%;
@@ -164,13 +173,17 @@
 	/* Estilos de notas */
 	
 	.nota_alpie{
+		
 		position: relative;
-		bottom: 0;
-		right: 0;
+		z-index: 2;
+		bottom: -77%;
+		right: -5%;
 
 	}
 	
 	.nota_alpie p{
+		padding:  5px;
+		background: rgba(0,0,0,0.58);
 		width: 30%;
 		float: right;
 		text-align: left;
@@ -183,12 +196,16 @@
 </head>
 
 <body>
-	
+	<!-- /* Navegador Lateral */ -->
+
 	<nav id="menu_lateral">
-		
+
+		<!-- /*Perfil navegador Lateral */ -->
 		<img src="perfil.jpg">
 		<h1>Sofía Rivas</h1>
 		<h2>Diseño Gráfico | Código </h2>
+
+		<!-- /* opciones de navegacion*/ -->
 		<ul>
 			<li class="lista_nav">Processing</li>
 			<li>Sketch 1</li>
@@ -199,9 +216,13 @@
 			<li>Contacto</li>
 		</ul>
 
+		<!-- /* Reseña */ -->
+
 		<p>Este es un ejercicio de interacción continua desarrollado en processing, adaptado a p5.js para implementarlo en web. Puedes dibujar diferentes formas, usa las flechas para interactuar.</p>
 
-		<span id="link_redes">
+		<!-- /* Redes Sociales */ -->
+
+		<span id="link_red">
 			<a href="https://github.com/sofiarivas"> <i class="fa fa-github"></i></a>
 			<a href="https://www.behance.net/sofiarivas"><i class="fa fa-behance"></i></a>
 			<a href="https://www.serendipiavisual.com"> <i class="material-icons">book</i></a>
