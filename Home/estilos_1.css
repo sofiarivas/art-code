@@ -1,0 +1,92 @@
+body {padding: 0; margin: 0;
+		position: relative;
+  		width: 100%;
+  		height: 100%;
+  	} 
+
+  	.material-icons {
+	  font-family: 'Material Icons';
+	  font-weight: normal;
+	  font-style: normal;
+	  font-size: 24px;  /* Preferred icon size */
+	  display: inline-block;
+	  width: 1em;
+	  height: 1em;
+	  line-height: 1;
+	  text-transform: none;
+	  letter-spacing: normal;
+	  word-wrap: normal;
+
+	  /* Support for all WebKit browsers. */
+	  -webkit-font-smoothing: antialiased;
+	  /* Support for Safari and Chrome. */
+	  text-rendering: optimizeLegibility;
+
+	  /* Support for Firefox. */
+	  -moz-osx-font-smoothing: grayscale;
+
+	  /* Support for IE. */
+	  font-feature-settings: 'liga';
+	}
+
+  	
+
+	p{
+		font-family: 'Share Tech Mono', ;
+		font-size: 10px;
+		color: #FFFFFF;
+	}
+
+	
+
+	 /* Estilos de menus */
+
+	#menu{
+		float: left;
+		margin: 15px;
+		display: inline-block;
+		color: white;
+	}
+
+	#link_redes{
+		float: right;
+		margin: 15px;
+		display: inline-block;
+	}
+
+	/* Estilos de frame*/
+	#sketch{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: -2;
+		
+	}
+
+	#sketch iframe{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		
+		
+	}
+
+	/* Estilos de notas */
+	
+	.nota_alpie{
+		position: fixed;
+		bottom: 0;
+		right: 0;
+
+	}
+	
+	.nota_alpie p{
+		width: 30%;
+		float: right;
+		text-align: left;
+		margin: 40px 15px;
+
+	}
+
+
+	

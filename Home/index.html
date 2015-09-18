@@ -1,0 +1,229 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=Fjalla+One|Share+Tech+Mono' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <script language="javascript" type="text/javascript" src="../p5.js"></script>
+  <!-- uncomment lines below to include extra p5 libraries -->
+  <script language="javascript" src="../addons/p5.dom.js"></script>
+  <!--<script language="javascript" src="../addons/p5.sound.js"></script>-->
+  
+  <!-- this line removes any default padding and style. you might only need one of these values set. -->
+
+  <style type="text/css">
+
+	body {
+		padding: 0; 
+		margin: 0;
+		position: relative;
+  		width: 100%;
+  		height: 100%;
+  	} 
+	.
+  	.material-icons {
+	  font-family: 'Material Icons';
+	  font-weight: 100;
+	  font-style: normal;
+	  font-size: 20px;  /* Preferred icon size */
+	  display: inline-block;
+	  width: 1em;
+	  height: 1em;
+	  line-height: 1;
+	  text-transform: none;
+	  letter-spacing: normal;
+	  word-wrap: normal;
+
+	  /* Support for all WebKit browsers. */
+	  -webkit-font-smoothing: antialiased;
+	  /* Support for Safari and Chrome. */
+	  text-rendering: optimizeLegibility;
+
+	  /* Support for Firefox. */
+	  -moz-osx-font-smoothing: grayscale;
+
+	  /* Support for IE. */
+	  font-feature-settings: 'liga';
+	}
+
+
+  	h1{
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 14px;
+		color: #FFFFFF;
+		text-align: center;
+		font-style: normal;
+		font-weight: normal;
+		letter-spacing: 1;
+  	}
+
+  	h2{
+		font-family: 'Share Tech Mono', ;
+		font-size: 10px;
+		color: #FFFFFF;
+		text-align: center;
+		margin: 3px 5px 25px 5px;
+  	}
+
+	p{
+		font-family: 'Share Tech Mono', ;
+		font-size: 12px;
+		color: #FFFFFF;
+		line-height: 14px;
+	}
+
+	
+
+	 /* Estilos de menu lateral */
+
+	#menu_lateral{
+		position: fixed;
+		background: #191919;
+		width: 20%;
+		height: 100%;
+		border-right: 1px solid #191919;
+		text-align: center;
+
+
+	}
+	#menu_lateral img{
+		border-radius: 50px;
+		width: 90px; 
+		height: 90px;
+		margin:  50px 10px 5px 10px;
+
+	}
+
+	#menu_lateral h1{
+		margin: 15px 5px 2px 5px;
+
+	}
+	#menu_lateral ul{
+		list-style: none;
+		font-family: 'Share Tech Mono', ;
+		font-size: 12px;
+		color: #FFFFFF;
+		padding: 0px;
+
+	}	
+
+	#menu_lateral li{
+		text-align: center;
+		margin-bottom: 8px;
+	}
+
+	#menu_lateral p{
+		text-align: left;
+		padding: 10px;
+		margin: 10px;
+
+	}
+
+	#menu{
+		float: left;
+		margin: 15px;
+		display: inline-block;
+		color: white;
+	}
+
+	#link_redes{
+		position: relative;
+		margin: 0px 10px 10px 10px;
+		display: inline-block;
+		z-index: 3;
+	}
+	#link_redes a{
+		font-size: 18px;
+		color: white;
+		margin: 0px 5px;
+		text-align: center;
+
+	}
+
+	/* Estilos de frame*/
+
+	#sketch{
+		float: right;
+		position: relative;
+		width: 80%;
+		height: 100%;
+		z-index: 0;
+
+		
+	}
+
+	#sketch iframe{
+		border:none;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		
+		
+	}
+
+	/* Estilos de notas */
+	
+	.nota_alpie{
+		position: relative;
+		bottom: 0;
+		right: 0;
+
+	}
+	
+	.nota_alpie p{
+		width: 30%;
+		float: right;
+		text-align: left;
+		margin: 40px 15px;
+
+	}
+
+
+  </style>
+</head>
+
+<body>
+	
+	<nav id="menu_lateral">
+		
+		<img src="perfil.jpg">
+		<h1>Sofía Rivas</h1>
+		<h2>Diseño Gráfico | Código </h2>
+		<ul>
+			<li class="lista_nav">Processing</li>
+			<li>Sketch 1</li>
+			<li>Sketch 2</li>
+			<li>Sketch 3</li>
+			<li>Sketch 4</li>
+			<li>Sketch 5</li>
+			<li>Contacto</li>
+		</ul>
+
+		<p>Este es un ejercicio de interacción continua desarrollado en processing, adaptado a p5.js para implementarlo en web. Puedes dibujar diferentes formas, usa las flechas para interactuar.</p>
+
+		<span id="link_redes">
+			<a href="https://github.com/sofiarivas"> <i class="fa fa-github"></i></a>
+			<a href="https://www.behance.net/sofiarivas"><i class="fa fa-behance"></i></a>
+			<a href="https://www.serendipiavisual.com"> <i class="material-icons">book</i></a>
+		</span>
+		
+	</nav>
+	
+
+
+	<div id="link_redes">
+		<a href="https://github.com/sofiarivas"> <i class="material-icons">code</i></a>
+	</div>
+	<div class="nota_alpie">
+		<p>Este es un ejercicio de interacción continua desarrollado en processing, adaptado a p5.js para implementarlo en web. Puedes dibujar diferentes formas, usa las flechas para interactuar.</p>
+	</div>
+	
+		<div id="sketch">
+
+			<iframe src="sketch.html"> </iframe>
+		</div>
+
+
+</body>
+
+</html>
