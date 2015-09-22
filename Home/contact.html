@@ -4,7 +4,7 @@
   <link href='https://fonts.googleapis.com/css?family=Inconsolata|Fjalla+One' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <script language="javascript" type="text/javascript" src="sketches/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="../p5.js"></script>
   <script language="javascript" src="../addons/p5.dom.js"></script>
   <link href="estilos_1.css" rel="stylesheet" type="text/css">
 
@@ -24,14 +24,14 @@
 		<ul class="menu_destacados">
 			<li><a href="index.html">Processing</a></li>
 			<li><a href="sketch_3.html">Figuras básicas</a></li>
-			<li><a href="sketch_1.html" class="seleccionado">Interacción continua</a></li>
+			<li><a href="sketch_1.html">Interacción continua</a></li>
 			<li><a href="sketch_4.html">Iteración</a></li>
-			<li><a href="contact.html">Contacto</a></li>
+			<li><a href="contact.html" class="seleccionado">Contacto</a></li>
 		</ul>
 
 		<!-- /* Reseña */ -->
 
-		<p>Este es un ejercicio de interacción continua desarrollado en processing, adaptado a p5.js para implementarlo en web. Puedes dibujar diferentes formas, usa las flechas para interactuar.</p>
+		<p>¡Hola! Me llamo Sofía Rivas Muñoz y este es mi página con algunos proyectos de processing. Utilice HTML, CSS y p5.js. Puedes interactuar con los ejercicios y espero que te gusten y quieras aprender :D </p>
 
 		<!-- /* Redes Sociales */ -->
 
@@ -43,17 +43,19 @@
 		
 	</nav>
 
-	<div id="link_redes">
-		<a href="https://github.com/sofiarivas"> <i class="material-icons">code</i></a>
-	</div>
-	<div class="nota_alpie">
-		<p>Este es un ejercicio de interacción continua desarrollado en processing, adaptado a p5.js para implementarlo en web. Puedes dibujar diferentes formas, usa las flechas para interactuar.</p>
-	</div>
-	
-		<div id="sketch">
 
-			<iframe src="sketch1.html"> </iframe>
-		</div>
+	<main id="contenedor">
+		<h1>Contáctame:</h1>
+		<h2 id="contacto_h2">Si tienes alguna pregunta o solo quieres saludar puedes escribirme en el siguiente formato. </h2>
+		<form id="forma_contacto">
+	
+			<input class="input_1" type="text" name="Tu nombre:" size="50" placeholder="Tu nombre:"><br>
+			<input class="input_1" type="text" name="email" size="50" placeholder="Tu e-mail:"><br>
+			<input id="mensaje" type="text" name="nombre" size="50" placeholder="Tu mensaje:"><br>
+			<input class="button" type="submit">
+		</form>
+		
+	</main>
 
 
 </body>

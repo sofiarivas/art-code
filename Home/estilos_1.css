@@ -37,9 +37,20 @@ body {
 		font-size: 40px;
 		text-align: left;
 		letter-spacing: 1;
-
-
 	}
+	h1 a{
+		padding: 5px;
+		font-size: 30px;
+		color: #191919;
+		vertical-align: 5;
+	}
+
+
+	h1 a:hover{
+		color: white;
+	}
+
+
 	h2{
 		font-family: 'Fjalla One', sans-serif;
 		font-size: 25px;
@@ -48,6 +59,10 @@ body {
 		letter-spacing: 1;
 		border-left: 1px solid #003D3B;
 		padding-left: 10px;
+  	}
+
+  	#contacto_h2{
+  		width: 80%;
   	}
 
   	h3{
@@ -77,19 +92,38 @@ body {
 
 	#contenedor{
 	position: relative;
-	width: 68%;
+	width: 70%;
 	float: right;
-	padding: 25px;
+	padding: 2em 1em 1em 1em;
 	float: right;
 
 	}
 
 	#contenedor p{
 		color: #1A5755;
+		width: 90%;
+		font-size: 13px;
+		line-height: 1.6;
+
+	}
+	#contenedor h3{
+		color: #003D3B;
+		text-align: left;
+	}
+
+	#contenedor h3 a{
+		color: white;
+		text-decoration: none;
+		font-style: italic;
+	}
+	#contenedor h3 a:hover{
+	color: #FC0D51;
+	background: white;
+	padding: 0.3em;
 	}
 
 	 /* Estilos de menu lateral */
-
+	
 	#menu_lateral{
 		position: fixed;
 		background: #191919;
@@ -120,9 +154,33 @@ body {
 		padding: 0px;
 
 	}	
-	#menu_lateral li:hover{
-		
-		color: #00F0E9;
+	#link_red a:hover{
+		color: #FC0D51;
+
+	}
+	 /* Estilos de links del menu */
+
+	.menu_destacados a{
+		text-decoration: none;
+		color: gray;
+
+	}
+
+	.menu_destacados a:hover{
+	color: white;
+	background: #FC0D51;
+	padding: 0.3em;
+	font-weight: bolder;
+
+	}
+
+	 /* Estilo marcador de sección */
+
+	#menu_lateral a.seleccionado{
+	color: #191919;
+	background: white;
+	padding: 0.3em;
+	font-weight: bolder;
 
 	}
 
@@ -221,3 +279,56 @@ body {
 		margin: 40px 15px;
 
 	}
+
+/* Estilos de boton */
+	.button {
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		letter-spacing: 1;
+		display: block;
+		padding: 0.8em;
+		border: none;
+		background: white;
+		width: 10em;
+		height:3em;
+
+
+	}
+	.button:focus {
+		outline: none;
+	}
+
+	.button:hover {
+		color: white;
+		background-color: #FC0D51;
+	}
+
+	.button a{
+		text-decoration: none;
+		color: #191919;
+	}
+	 .button a:hover{
+	 	color: white;
+
+	 }
+
+/* Estilos de input */
+#forma_contacto	input[type="text"] {
+    font-size: 14px;
+	font-family: 'Inconsolata', ;
+	padding-left: 1em;
+	}
+
+#forma_contacto input{
+		height: 3em;
+		border:  none;
+		margin-bottom: 1em;
+}
+
+ #forma_contacto input:focus {
+		outline: none;
+	}
+  #mensaje{
+	height: 60px;
+}
