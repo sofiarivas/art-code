@@ -1,0 +1,334 @@
+body {
+		padding: 0; 
+		margin: 0;
+		position: absolute;
+  		width: 100%;
+  		height: 100%;
+  		background-color: #00D6D0;
+  	} 
+	.
+  	.material-icons {
+	  font-family: 'Material Icons';
+	  font-weight: 100;
+	  font-style: normal;
+	  font-size: 20px;  /* Preferred icon size */
+	  display: inline-block;
+	  width: 1em;
+	  height: 1em;
+	  line-height: 1;
+	  text-transform: none;
+	  letter-spacing: normal;
+	  word-wrap: normal;
+
+	  /* Support for all WebKit browsers. */
+	  -webkit-font-smoothing: antialiased;
+	  /* Support for Safari and Chrome. */
+	  text-rendering: optimizeLegibility;
+
+	  /* Support for Firefox. */
+	  -moz-osx-font-smoothing: grayscale;
+
+	  /* Support for IE. */
+	  font-feature-settings: 'liga';
+	}
+	h1{
+		color: #191919;
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 40px;
+		text-align: left;
+		letter-spacing: 1;
+	}
+	h1 a{
+		padding: 5px;
+		font-size: 30px;
+		color: #191919;
+		vertical-align: 5;
+	}
+
+
+	h1 a:hover{
+		color: white;
+	}
+
+
+	h2{
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 25px;
+		color: #003D3B;
+		text-align: left;
+		letter-spacing: 1;
+		border-left: 1px solid #003D3B;
+		padding-left: 10px;
+  	}
+
+  	#contacto_h2{
+  		width: 80%;
+  	}
+
+  	h3{
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 19px;
+		color: #FFFFFF;
+		text-align: center;
+		font-style: normal;
+		font-weight: normal;
+		letter-spacing: 1;
+  	}
+
+  	h4{
+		font-family: 'Inconsolata', ;
+		font-size: 16px;
+		color: #FFFFFF;
+		text-align: center;
+		margin: 3px 5px 25px 5px;
+  	}
+
+	p{
+		font-family: 'Inconsolata', ;
+		font-size: 12px;
+		color: #FFFFFF;
+		line-height: 16px;
+	}
+
+	#contenedor{
+	position: relative;
+	width: 70%;
+	float: right;
+	padding: 2em 1em 1em 1em;
+	float: right;
+
+	}
+
+	#contenedor p{
+		color: #1A5755;
+		width: 90%;
+		font-size: 13px;
+		line-height: 1.6;
+
+	}
+	#contenedor h3{
+		color: #003D3B;
+		text-align: left;
+	}
+
+	#contenedor h3 a{
+		color: white;
+		text-decoration: none;
+		font-style: italic;
+	}
+	#contenedor h3 a:hover{
+	color: #FC0D51;
+	background: white;
+	padding: 0.3em;
+	}
+
+	 /* Estilos de menu lateral */
+	
+	#menu_lateral{
+		position: fixed;
+		background: #191919;
+		width: 25%;
+		height: 100%;
+		border-right: 1px solid #00D6D0;
+		text-align: center;
+
+	}
+
+	#menu_lateral img{
+		border-radius: 50px;
+		width: 90px; 
+		height: 90px;
+		margin:  50px 10px 5px 10px;
+
+	}
+
+	#menu_lateral h1{
+		margin: 15px 5px 2px 5px;
+
+	}
+	#menu_lateral ul{
+		list-style: none;
+		font-family: 'Inconsolata', ;
+		font-size: 12px;
+		color: #FFFFFF;
+		padding: 0px;
+
+	}	
+	#link_red a:hover{
+		color: #FC0D51;
+
+	}
+	 /* Estilos de links del menu */
+
+	.menu_destacados a{
+		text-decoration: none;
+		color: gray;
+
+	}
+
+	.menu_destacados a:hover{
+	color: white;
+	background: #FC0D51;
+	padding: 0.3em;
+	font-weight: bolder;
+
+	}
+
+	 /* Estilo marcador de sección */
+
+	#menu_lateral a.seleccionado{
+	color: #191919;
+	background: white;
+	padding: 0.3em;
+	font-weight: bolder;
+
+	}
+
+	#menu_lateral li{
+		text-align: center;
+		margin-bottom: 8px;
+	}
+
+	#menu_lateral p{
+		text-align: left;
+		padding: 10px;
+		margin: 10px;
+
+	}
+
+	#menu{
+		float: left;
+		margin: 15px;
+		display: inline-block;
+		color: white;
+	}
+
+		#link_red a{
+		position: relative;
+		font-size: 18px;
+		color: white;
+		margin: 0px 5px;
+		text-align: center;
+	}
+
+	/* Estilos de menu de codigo */
+
+	#link_redes{
+		z-index: 1;
+		float: right;
+		position: relative;
+		margin: 15px;
+		display: inline-block;
+
+	}
+
+	#link_redes a{
+		color: white;
+
+	}
+
+	/* Estilos de frame*/
+
+	#sketch{
+		float: right;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		width: 75%;
+		height: 100%;
+		z-index: 0;
+		pointer-events: auto;
+
+		
+	}
+
+	#sketch iframe{
+		
+		border:none;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		
+		
+	}
+
+	#textos{
+		position: relative;
+		z-index: 2;
+		bottom: -70%;
+		right: -5%;
+	}
+
+	/* Estilos de notas */
+	
+	.nota_alpie{
+		
+		position: relative;
+		z-index: 2;
+		bottom: -70%;
+		right: -5%;
+
+	}
+	
+	.nota_alpie p{
+		padding:  5px;
+		background: rgba(0,0,0,0.58);
+		width: 30%;
+		float: right;
+		text-align: left;
+		margin: 40px 15px;
+
+	}
+
+/* Estilos de boton */
+	.button {
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 14px;
+		font-weight: normal;
+		letter-spacing: 1;
+		display: block;
+		padding: 0.8em;
+		border: none;
+		background: white;
+		width: 10em;
+		height:3em;
+
+
+	}
+	.button:focus {
+		outline: none;
+	}
+
+	.button:hover {
+		color: white;
+		background-color: #FC0D51;
+	}
+
+	.button a{
+		text-decoration: none;
+		color: #191919;
+	}
+	 .button a:hover{
+	 	color: white;
+
+	 }
+
+/* Estilos de input */
+#forma_contacto	input[type="text"] {
+    font-size: 14px;
+	font-family: 'Inconsolata', ;
+	padding-left: 1em;
+	}
+
+#forma_contacto input{
+		height: 3em;
+		border:  none;
+		margin-bottom: 1em;
+}
+
+ #forma_contacto input:focus {
+		outline: none;
+	}
+  #mensaje{
+	height: 60px;
+}
