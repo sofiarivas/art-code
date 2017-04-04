@@ -76,7 +76,7 @@ body {
   	}
 
   	h4{
-		font-family: 'Inconsolata', ;
+		font-family: 'Inconsolata';
 		font-size: 16px;
 		color: #FFFFFF;
 		text-align: center;
@@ -84,19 +84,15 @@ body {
   	}
 
 	p{
-		font-family: 'Inconsolata', ;
+		font-family: 'Inconsolata';
 		font-size: 12px;
 		color: #FFFFFF;
 		line-height: 16px;
 	}
 
 	#contenedor{
-	position: relative;
-	width: 70%;
-	float: right;
-	padding: 2em 1em 1em 1em;
-	float: right;
-
+		width: 90%;
+		margin: auto;
 	}
 
 	#contenedor p{
@@ -123,13 +119,34 @@ body {
 	}
 
 	 /* Estilos de menu lateral */
+
+	.menu-item {
+		display: inline-block;
+	}
+
+	.menu-summary {
+		margin: auto;
+		padding: 24px;
+	}
+	
+	.menu-summary-item {
+		text-align: left;
+		display: block;
+		float: left;
+		width: 100%;
+		margin: 0;
+	}
+
+	.menu-container {
+		display: inline-flex;
+		margin: 20px auto;
+	}
 	
 	#menu_lateral{
-		position: fixed;
 		background: #191919;
-		width: 25%;
-		height: 100%;
+		width: 100%;
 		border-right: 1px solid #00D6D0;
+		font-family: 'Inconsolata';
 		text-align: center;
 
 	}
@@ -138,8 +155,6 @@ body {
 		border-radius: 50px;
 		width: 90px; 
 		height: 90px;
-		margin:  50px 10px 5px 10px;
-
 	}
 
 	#menu_lateral h1{
@@ -147,8 +162,10 @@ body {
 
 	}
 	#menu_lateral ul{
+		margin: 0 20px;
+		display: inline-block;
 		list-style: none;
-		font-family: 'Inconsolata', ;
+		font-family: 'Inconsolata';
 		font-size: 12px;
 		color: #FFFFFF;
 		padding: 0px;
@@ -183,16 +200,17 @@ body {
 	font-weight: bolder;
 
 	}
-
+	
 	#menu_lateral li{
+		display: inline-block;
 		text-align: center;
-		margin-bottom: 8px;
+		margin: 5px 8px;
 	}
 
 	#menu_lateral p{
 		text-align: left;
-		padding: 10px;
-		margin: 10px;
+		padding: 5%;
+		margin: 0;
 
 	}
 
@@ -203,11 +221,11 @@ body {
 		color: white;
 	}
 
-		#link_red a{
-		position: relative;
+		#link_red a {
+		margin-bottom: 20px;
+		display: inline-block;
 		font-size: 18px;
 		color: white;
-		margin: 0px 5px;
 		text-align: center;
 	}
 
@@ -331,4 +349,18 @@ body {
 	}
   #mensaje{
 	height: 60px;
+}
+
+@media (min-width: 800px) {
+	#menu_lateral{
+		width: 30%;
+		display: inline-block;
+		height: 100%;
+	}
+	#contenedor {
+		float: right;
+		display: inline-block;
+		width: 60%;
+		padding: 4%;
+	}
 }
